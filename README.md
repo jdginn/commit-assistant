@@ -49,4 +49,13 @@ Config:
   - Linter
     - Configure linter to use
   - File contents
--
+
+Toy example of how this might work as a shell one-liner:
+
+```
+git commit --edit -m "$(echo "Write a conventional git commit message for the following diff. Your message should include a summary line at most 80 characters long. Then, skip a line and include as many lines as explanation as you feel are appropriate. ONLY OUTPUT THE COMMIT MESSAGE. $(git diff --cached)" | aichat)"
+```
+
+```
+
+```
